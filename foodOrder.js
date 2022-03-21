@@ -12,6 +12,6 @@ class FoodOrder {
     }
 
     GenerateSQL() {
-        return `(${this.#order_date}, ${this.#food_id}, ${this.#order_price})`;
+        return `\t('${this.#order_date}', ${this.#food_id}, ${this.#order_price})`;
     }
 }
