@@ -90,3 +90,11 @@ VALUES
 	('2022-03-30', 3, 323),
 	('2022-03-31', 3, 303),
 	('2022-03-31', 1, 101);
+
+-- apple を avocado に変更
+UPDATE
+    Foods
+SET
+    name = 'avocado'
+WHERE
+    name = 'apple';
