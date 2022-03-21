@@ -21,7 +21,7 @@ class Food {
         return this.#name;
     }
 
-    calculatePrice() {
+    get Price() {
         return Math.trunc(this.#price + Math.random() * this.#price_range + 1);
     }
 }
