@@ -6,7 +6,7 @@
     - INSERT
     - SELECT
     - UPDATE
-    - DELETE
+- マスターを1つ、トランザクションテーブルを1つ作成する
 
 ## SQLの実行結果を確認する環境
 
@@ -22,10 +22,10 @@
 ## Table
 
 - 練習として使うテーブル
-    - Food
+    - Foods
     - FoodOrders
 
-### Food
+### Foods
 
 - id
     - INT(2)
