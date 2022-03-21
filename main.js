@@ -96,5 +96,4 @@ function ConvertDateToYMSString(date) {
 */
 function CopySQL() {
     navigator.clipboard.writeText(document.getElementById("GenerateSQLResult").textContent);
-    console.log(document.getElementById("GenerateSQLResult").textContent);
 }
