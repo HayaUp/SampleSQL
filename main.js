@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const sqlButton = document.getElementById("GenerateSQLButton");
     sqlButton.addEventListener("click", GenerateSQL);
+
+    const copyButton = document.getElementById("CopyButton");
+    copyButton.addEventListener("click", CopySQL);
 });
 
 /*
@@ -86,4 +89,12 @@ function ConvertDateToYMSString(date) {
         String(date.getMonth() + 1).padStart(2, "0"),
         String(date.getDate()).padStart(2, "0")
     ].join("-");
+}
+
+/*
+    生成したSQLをクリップボードにコピーする
+*/
+function CopySQL() {
+    navigator.clipboard.writeText(document.getElementById("GenerateSQLResult").textContent);
+    console.log(document.getElementById("GenerateSQLResult").textContent);
 }
