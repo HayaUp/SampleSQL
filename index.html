@@ -8,9 +8,22 @@
 </head>
 <body>
     <div>
-        <input type="date" id="StartDate" value="2022-03-01">
-        <input type="date" id="EndDate" value="2022-03-31">
+        <label for="">テーブル名</label>
+        <input type="text" id="TableName" value="FoodOrders">
     </div>
+    <div>
+        <label for="StartDate">注文開始日</label>
+        <input type="date" id="StartDate">
+    </div>
+    <div>
+        <label for="EndDate">注文終了日</label>
+        <input type="date" id="EndDate">
+    </div>
+    <div>
+        <label for="">1日当たりのレコード数</label>
+        <input type="number" id="RecordPerDay" min="0" max="10" value="5">
+    </div>
+
     <div>
         <button id="GenerateSQLButton">INSERTのSQLを作成</button>
     </div>
