@@ -16,7 +16,8 @@
 ## HTMLファイルやJSファイルの役割
 
 - INSERT で使う文字列を生成する
-    - ※手打ちで作成するのに手間がかかるため
+    - 手打ちで作成するのに手間がかかるため
+    - コーディングの勘所？を思い出すため
 
 ## Table
 
@@ -51,6 +52,16 @@
 - order_price
     - INT(3)
     - food.price + food.price_range
+
+## 開発環境
+
+- Visual Studio Code
+    - Version 1.65.2
+- Google Chrome
+    -  99.0.4844.82
+- SQL Fiddle
+    - http://sqlfiddle.com/
+    - MySQL 5.6
 
 ## 参考
 
