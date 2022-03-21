@@ -7,9 +7,9 @@ function GenerateSQL() {
         new Food(3, "cherry", 300, 30),
     ];
 
-    const fpe = new FoodPurchaseElement("2022-03-01", foods[0])
-    console.log(fpe);
-    console.log(fpe.generateSQL());
+    // const fpe = new FoodPurchaseElement("2022-03-01", foods[0])
+    // console.log(fpe);
+    // console.log(fpe.generateSQL());
 
     // document.getElementById("GenerateSQLResult").textContent = "";
 }
