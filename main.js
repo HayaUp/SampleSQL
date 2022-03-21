@@ -54,7 +54,7 @@ function GenerateSQLInsertValues() {
     while(currentDate <= endDate) {
         for(let i = 0; i < recordPerDay; i++) {
 
-            const foods_index = Math.trunc(Math.random() * 2);
+            const foods_index = Math.trunc(Math.random() * 3);
             const foodOrder = new FoodOrder(ConvertDateToYMSString(currentDate), foods[foods_index]);
             foodOrders.push(foodOrder.GenerateSQL());
         }
