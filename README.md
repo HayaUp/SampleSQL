@@ -8,6 +8,15 @@
     - UPDATE
 - マスターを1つ、トランザクションテーブルを1つ作成する
 
+## 作成したSQL
+
+- [sampleDDL.sql](./sql/sampleDDL.sql)
+    - CREATE TABLE
+    - INSERT
+    - (UPDATE)
+- [sampleDML.sql](./sql/sampleDML.sql)
+    - SELECT
+
 ## SQLの実行結果を確認する環境
 
 - SQL Fiddle
