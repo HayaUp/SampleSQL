@@ -92,6 +92,7 @@ VALUES
 	('2022-03-31', 1, 101);
 
 -- apple を avocado に変更
+-- DML だが DDL を記述するウィンドウじゃないと実行できなかった
 UPDATE
     Foods
 SET
