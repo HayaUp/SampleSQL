@@ -17,10 +17,11 @@ SELECT
 FROM FoodOrders LEFT JOIN Foods
     ON FoodOrders.food_id = Foods.id;
 
--- food_id ごとの最小・最大・平均価格を表示
+-- food_id ごとの総数、合計・最小・最大・平均価格を表示
 SELECT
     food_id,
     COUNT(food_id) AS quantity,
+    SUM(order_price) AS total_price,
     MIN(order_price) AS min_price,
     MAX(order_price) AS max_price,
     AVG(order_price) AS average_price
