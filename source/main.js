@@ -17,21 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
 */
 function InitializeOrderDate() {
     const today = new Date();
-    const firstDay = new Date(today.getFullYear(), today.getMonth() + 1, 1);
+    const firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
     const startDate = document.getElementById("StartDate");
-    startDate.value = [
-        firstDay.getFullYear(),
-        String(firstDay.getMonth()).padStart(2, "0"),
-        "01"
-    ].join("-");
+    startDate.value = ConvertDateToYMSString(firstDay);
 
     const lastDay = new Date(today.getFullYear(), today.getMonth() + 1, 0);
     const endDate = document.getElementById("EndDate");
-    endDate.value = [
-        lastDay.getFullYear(),
-        String(lastDay.getMonth() + 1).padStart(2, "0"),
-        lastDay.getDate()
-    ].join("-");
+    endDate.value = ConvertDateToYMSString(lastDay);
 }
 
 /*
