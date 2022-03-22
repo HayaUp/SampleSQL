@@ -20,13 +20,14 @@ FROM FoodOrders LEFT JOIN Foods
 ORDER BY Foods.name DESC;
 
 -- food_id ごとの総数、合計・最小・最大・平均価格を表示
+-- 平均価格は四捨五入
 SELECT
     food_id,
     COUNT(food_id) AS quantity,
     SUM(order_price) AS total_price,
     MIN(order_price) AS min_price,
     MAX(order_price) AS max_price,
-    AVG(order_price) AS average_price
+    ROUND(AVG(order_price), 0) AS average_price
 FROM
     FoodOrders
 GROUP BY
