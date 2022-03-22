@@ -10,12 +10,14 @@ WHERE
     order_date BETWEEN "2022-03-01" AND "2022-03-05";
 
 -- 結合して food_id ではなく Foods.name でレコードを表示
+-- Foods.nameを降順で表示
 SELECT
     FoodOrders.id,
     Foods.name,
     FoodOrders.order_price
 FROM FoodOrders LEFT JOIN Foods
-    ON FoodOrders.food_id = Foods.id;
+    ON FoodOrders.food_id = Foods.id
+ORDER BY Foods.name DESC;
 
 -- food_id ごとの総数、合計・最小・最大・平均価格を表示
 SELECT
