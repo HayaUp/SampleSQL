@@ -5,30 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SQL - INSERT文を作る - </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
-        <label for="">テーブル名</label>
-        <input type="text" id="TableName" value="FoodOrders">
-    </div>
-    <div>
-        <label for="StartDate">注文開始日</label>
-        <input type="date" id="StartDate">
-    </div>
-    <div>
-        <label for="EndDate">注文終了日</label>
-        <input type="date" id="EndDate">
-    </div>
-    <div>
-        <label for="">1日当たりのレコード数</label>
-        <input type="number" id="RecordPerDay" min="0" max="10" value="2">
+    <div class="content">
+        <h1>SQL INSERT文を作る</h1>
+        <form class="pure-form pure-form-stacked">
+            <fieldset>
+                <label for="">テーブル名</label>
+                <input type="text" id="TableName" value="FoodOrders">
+
+                <label for="StartDate">注文開始日</label>
+                <input type="date" id="StartDate">
+
+                <label for="EndDate">注文終了日</label>
+                <input type="date" id="EndDate">
+
+                <label for="">1日当たりのレコード数</label>
+                <input type="number" id="RecordPerDay" min="0" max="10" value="2">
+
+                <button id="GenerateSQLButton" class="pure-button pure-button-primary">INSERTのSQLを作成</button>
+                <button id="CopyButton" class="pure-button pure-button-primary">SQLをクリップボードにコピー</button>
+                <textarea id="GenerateSQLResult" cols="100" rows="10"></textarea>
+            </fieldset>
+        </form>
     </div>
 
-    <div>
-        <button id="GenerateSQLButton">INSERTのSQLを作成</button>
-        <button id="CopyButton">SQLをクリップボードにコピー</button>
-    </div>
-    <textarea id="GenerateSQLResult" cols="100" rows="10"></textarea>
     <script src="./food.js"></script>
     <script src="./foodOrder.js"></script>
     <script src="./main.js"></script>

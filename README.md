@@ -67,3 +67,5 @@
 
 - MySQL 8.0 リファレンスマニュアル / データ型
     - https://dev.mysql.com/doc/refman/8.0/ja/data-types.html
+- Pure.css
+    - https://purecss.io/
