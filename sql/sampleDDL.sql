@@ -22,7 +22,9 @@ CREATE TABLE IF NOT EXISTS FoodOrders (
     order_date DATE NOT NULL,
     food_id INT(2) UNSIGNED NOT NULL,
     order_price int(6) UNSIGNED NOT NULL,
-    PRIMARY KEY(id)
+    PRIMARY KEY(id),
+	FOREIGN KEY(food_id)
+		REFERENCES Foods(id)
 ) DEFAULT CHARSET=utf8;
 
 INSERT INTO FoodOrders
