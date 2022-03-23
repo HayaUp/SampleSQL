@@ -74,7 +74,14 @@
 
 ## 参考
 
+### MySQL
+
 - MySQL 8.0 リファレンスマニュアル / データ型
     - https://dev.mysql.com/doc/refman/8.0/ja/data-types.html
+- MySQL 5.6 リファレンスマニュアル  /  ...  /  外部キー制約の使用
+    - https://dev.mysql.com/doc/refman/5.6/ja/create-table-foreign-keys.html
+
+### CSS
+
 - Pure.css
     - https://purecss.io/
